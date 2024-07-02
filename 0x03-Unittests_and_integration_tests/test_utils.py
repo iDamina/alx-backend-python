@@ -91,8 +91,6 @@ class TestMemoize(unittest.TestCase):
             # Assert that the results are correct
             self.assertEqual(result1, 42)
             self.assertEqual(result2, 42)
-
-            # Assert that a_method was called only once
             mock_method.assert_called_once()
 
 
